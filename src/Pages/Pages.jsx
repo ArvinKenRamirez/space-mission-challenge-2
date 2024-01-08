@@ -5,7 +5,7 @@ import PageHeader from "../component/PageHeader";
 export default function Pages(){
 
     return(
-        <div className="container mx-auto px-20  h-screen">
+        <div className="container mx-auto px-1  h-screen max-tablet:w-full">
             <PageHeader></PageHeader>
             <PageBody></PageBody>
             <PageFooter></PageFooter>

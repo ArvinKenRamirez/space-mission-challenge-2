@@ -6,7 +6,6 @@ export default function PageFooter(){
 
 
     return(
-        //flex justify-center content-center
         <footer className="flex justify-center content-center bg-slate-200">
             <div className="flex justify-between w-5/6 my-4">
                 {copyrightText}

@@ -34,11 +34,11 @@ export default function PageBody(){
     //getMissions
     const getMissions = async () => {
         //setLaunchpads
-        const launchpadsFromServer = await fetchLaunchpads();
+        const launchpadsFromServer = await fetchLaunchpads().catch(err => console.log(err));;
         setLaunchpads(launchpadsFromServer);
 
         //setLaunches
-        const launchesFromServer = await fetchlaunches();
+        const launchesFromServer = await fetchlaunches().catch(err => console.log(err));;
         console.log('launchesFromServer==>',launchesFromServer);
         // setLaunches(launchesFromServer);
 
